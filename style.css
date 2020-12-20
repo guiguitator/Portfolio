@@ -1,0 +1,216 @@
+body {
+	background-color: #e8e8e8;
+	font-family: monospace;
+	animation: appear;
+	animation-duration: 2s;
+	overflow-y: hidden;
+}
+
+/*vignette*/
+
+aside.vignette {
+	background-color: white;
+	color: black;
+	position: absolute; top: 0%; left: 0%;
+	padding-left: 20px; padding-right: 20px;
+	max-width: 230px;
+	height: 100%;
+	z-index: 5;
+}
+
+div.vignette {
+	padding-top: 20px;
+}
+
+img.vignette {
+	border-radius: 50%;
+}
+
+img.vignette:hover {
+	border-radius: 49%;
+}
+
+h2 {
+	text-align: center;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+progress[value] {
+	-webkit-appearance: none;
+	/*-moz-appearance: none;*/
+	appearance: none;
+	border: none;
+	height: 5px;
+}
+
+progress[value]::-webkit-progress-bar {
+	background-color: #eee;
+	border-radius: 2px;
+	box-shadow: 0 1px 5px grey inset;
+}
+
+progress[value]::-webkit-progress-value {
+	border-radius: 2px;
+}
+
+#js_progress {
+	margin-bottom: 3px;
+}
+
+#js_progress[value]::-webkit-progress-value {
+	background-image: 
+		-webkit-linear-gradient(left, #FFD700, #FFFF00);
+}
+
+#css_progress {
+	margin-left: 50px;
+	margin-bottom: 3px;
+}
+
+#css_progress[value]::-webkit-progress-value {
+	background-image: 
+		-webkit-linear-gradient(left, #317cd6, #3a92fc);
+}
+
+#html_progress {
+	margin-left: 43px;
+	margin-bottom: 3px;
+}
+
+#html_progress[value]::-webkit-progress-value {
+	background-image: 
+		-webkit-linear-gradient(left, #ff7f00, #ffac05);
+}
+
+#js_progress:hover:after{
+	content: "45 %";
+	position: absolute;
+	animation: appear;
+	animation-duration: 0.5s;
+}
+
+#css_progress:hover:after{
+	content: "70 %";
+	position: absolute;
+	animation: appear;
+	animation-duration: 0.5s;
+}
+
+#html_progress:hover:after{
+	content: "90 %";
+	position: absolute;
+	animation: appear;
+	animation-duration: 0.5s;
+}
+
+label {
+	font-weight: bold;
+}
+
+p.vignette {
+	text-align: center;
+}
+
+img.media {
+	width: 48px;
+}
+
+p.credits {
+	text-align: center;
+	color: grey;
+	font-size: 10px;
+}
+
+a.credits {
+	color: blue;
+}
+
+
+/*core*/
+
+div.core {
+	background-color: #f7f7f7;
+	height: 100%;
+	position: absolute; top: 0; left: 270px; right: 0;
+}
+
+div.search {
+	width: 60%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+input.search {
+	border: none;
+	box-shadow: 1px 1px 20px rgba(177, 177, 177, 0.25);
+	padding: 15px;
+	padding-left: 25px;
+	border-radius: 50px;
+	width: 100%;
+	background-image: url(img/search.svg);
+	background-position: right 20px center;
+	background-repeat: no-repeat;
+	background-size: 20px;
+}
+
+div.board {
+	align-items: center;
+	align-content: center;
+	position: absolute; top: 65px; bottom: 0;
+	width: 100%;
+	overflow-y: visible;
+	overflow: auto;
+}
+
+div.card {
+	background-color: white;
+	border-radius: 5px;
+	width: 400px;
+	padding: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: auto;
+	min-height: 80px;
+	max-height: 80px;
+	display: block;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+div.img_card {
+	margin-top: 20px;
+	margin-right: 20px;
+	display: block;
+	float: left;
+}
+
+img.card {
+	width: 45px;
+}
+
+a.card {
+	color: black;
+	text-decoration: none;
+}
+
+/*animation*/
+
+@keyframes appear {
+	from {
+		opacity: 0%;
+	}
+	to {
+		opacity: 100%;
+	}
+}
