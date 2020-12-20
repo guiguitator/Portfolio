@@ -127,7 +127,7 @@ p.credits {
 }
 
 a.credits {
-	color: blue;
+	color: grey;
 }
 
 
@@ -223,6 +223,7 @@ span.theme {
 	top: 5px;
 	transform: translateX(-50%);
 	font-size: 28px;
+	cursor: pointer;
 }
 
 /*animation*/
