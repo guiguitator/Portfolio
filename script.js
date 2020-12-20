@@ -24,7 +24,7 @@ function changeThemeToLight() {
 	aside.style.backgroundColor = "white";
 	aside.style.color = "black";
 	card.style.backgroundColor = "white";
-	card.style.color = "color";
+	card.style.color = "black";
 	search.style.backgroundColor = "white";
 	search.style.color = "black";
 	link.style.color = "black";
