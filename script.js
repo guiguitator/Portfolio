@@ -5,6 +5,7 @@ var link = document.getElementById("link");
 var theme_div = document.getElementById("theme_div");
 var theme = document.getElementById("theme");
 var card = document.querySelectorAll(".card");
+var link = document.querySelectorAll(".link");
 
 var i;
 
@@ -14,12 +15,12 @@ function changeThemeToDark() {
 	aside.style.color = "white";
 	search.style.backgroundColor = "#2f3030";
 	search.style.color = "white";
-	link.style.color = "white";
 	theme_div.style.backgroundColor = "#161616";
 	theme.setAttribute('onclick',"changeThemeToLight()");
 		for (i = 0; i < card.length; i++) {
 			card[i].style.backgroundColor = "#1c1c1c";
 			card[i].style.color = "white";
+			link[i].style.color = "white";
 		}
 }
 
@@ -29,11 +30,28 @@ function changeThemeToLight() {
 	aside.style.color = "black";
 	search.style.backgroundColor = "white";
 	search.style.color = "black";
-	link.style.color = "black";
 	theme_div.style.backgroundColor = "white";
 	theme.setAttribute('onclick',"changeThemeToDark()");
 		for (i = 0; i < card.length; i++) {
 			card[i].style.backgroundColor = "white";
 			card[i].style.color = "black";
+			link[i].style.color = "black";
 		}
+}
+
+// --- // --- // --- // --- // --- // --- // --- // --- // --- // --- // --- // --- //
+
+const download_MinecraftTextureCreator = document.getElementById("download_MinecraftTextureCreator");
+
+var str = 0;
+
+function displayDownload_MinecraftTextureCreator() {
+	if (str == 0) {
+		download_MinecraftTextureCreator.style.display = "block";
+			str = 1;
+	}
+	else if (str == 1) {
+		download_MinecraftTextureCreator.style.display = "none";
+			str = 0;
+	}
 }
