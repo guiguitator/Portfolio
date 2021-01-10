@@ -8,6 +8,7 @@ var card = document.querySelectorAll(".card");
 var link = document.querySelectorAll(".link");
 
 var i;
+var k;
 
 function changeThemeToDark() {
 	core.style.backgroundColor = "#0a0a0a";
@@ -20,7 +21,9 @@ function changeThemeToDark() {
 		for (i = 0; i < card.length; i++) {
 			card[i].style.backgroundColor = "#1c1c1c";
 			card[i].style.color = "white";
-			link[i].style.color = "white";
+		}
+		for (k = 0; k < link.length; k++) {
+			link[k].style.color = "white";
 		}
 }
 
@@ -35,7 +38,9 @@ function changeThemeToLight() {
 		for (i = 0; i < card.length; i++) {
 			card[i].style.backgroundColor = "white";
 			card[i].style.color = "black";
-			link[i].style.color = "black";
+		}
+		for (k = 0; k < link.length; k++) {
+			link[k].style.color = "black";
 		}
 }
 

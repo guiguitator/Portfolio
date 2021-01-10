@@ -246,6 +246,20 @@ a.link {
 	cursor: pointer;
 }
 
+p.download_latest {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a.download_other {
+	color: grey;
+	text-decoration: none;
+}
+
+a.download_other:hover {
+	color: red;
+}
+
 /*Scrollbar*/
 
 ::-webkit-scrollbar {
