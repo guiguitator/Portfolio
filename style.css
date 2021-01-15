@@ -196,6 +196,12 @@ div.card:hover {
 	padding: 35px;
 }
 
+div.card:hover div.download{
+	display: block;	
+	animation-name: appear;
+	animation-duration: 1.5s;
+}
+
 div.img_card {
 	margin-top: 20px;
 	margin-right: 20px;
