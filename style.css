@@ -182,11 +182,18 @@ div.card {
 	margin-bottom: 15px;
 	height: auto;
 	min-height: 80px;
-
 	display: block;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
+	transition-property: padding;
+	transition-duration: 0.5s;
+}
+
+div.card:hover {
+	transition-property: padding;
+	transition-duration: 0.5s;
+	padding: 35px;
 }
 
 div.img_card {
@@ -281,5 +288,14 @@ a.download_other:hover {
 	}
 	to {
 		opacity: 100%;
+	}
+}
+
+@keyframes resize {
+	from {
+		padding: 20px;
+	}
+	to {
+		padding: 40px;
 	}
 }
