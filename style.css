@@ -24,10 +24,14 @@ div.vignette {
 
 img.vignette {
 	border-radius: 50%;
+	transition-duration: 1s;
+	opacity: 100%;
 }
 
 img.vignette:hover {
-	border-radius: 49%;
+	transform: rotate(360deg);
+	transition-duration: 1s;
+/*	opacity: 20%;*/
 }
 
 h2 {
